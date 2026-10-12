@@ -2,8 +2,7 @@ cask "coredence" do
   version "1.9.2"
   sha256 "891c191bb29c29f95e963a4fb1a44032af9f99aa9e5979c7151bc3bdda041118"
 
-  url "https://github.com/coredence/coredence/releases/download/v#{version}/Coredence-#{version}.dmg",
-      verified: "github.com/coredence/coredence/"
+  url "https://github.com/coredence/coredence/releases/download/v#{version}/Coredence-#{version}.dmg"
   name "Coredence"
   desc "Measured identity from your own writing, for you and your AI assistants"
   homepage "https://coredence.com/"
