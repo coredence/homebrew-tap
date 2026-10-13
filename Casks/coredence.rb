@@ -1,6 +1,6 @@
 cask "coredence" do
-  version "2.0.0"
-  sha256 "a455f89691a5e580b3e97d25e2d89fc19803da07d62ecb5ba7ccde68a2765bef"
+  version "2.0.1"
+  sha256 "21e2652e2cfa1b383d74ad2094ccd4a68389d336a642a3f26bb2a0b6d3beae65"
 
   url "https://github.com/coredence/coredence/releases/download/v#{version}/Coredence-#{version}.dmg"
   name "Coredence"
@@ -18,6 +18,11 @@ cask "coredence" do
   depends_on macos: :sonoma
 
   app "Coredence.app"
+  #  on PATH: plugins start the server as , and
+  # ~/.local/bin (where the app writes its own launcher) is not on PATH on
+  # every Mac. Homebrew's bin is. Available from 2.0.1; older bundles do not
+  # carry the launcher.
+  binary "#{appdir}/Coredence.app/Contents/Resources/engine/bin/coredence"
 
   # ~/.coredence is deliberately not here: it holds the identity itself,
   # and uninstalling the app keeps it, as the site promises. Delete it by
