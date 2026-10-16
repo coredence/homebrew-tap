@@ -1,6 +1,6 @@
 cask "coredence" do
-  version "2.0.7"
-  sha256 "98ba68481cc8ee371b1003f1b75c5dd91c9eeac80736b6c45c593af6c1422271"
+  version "2.0.8"
+  sha256 "8e70df14d6b544be5c45a5881509c68b82836dd194907c1a6ec9f4db28d48280"
 
   url "https://github.com/coredence/coredence/releases/download/v#{version}/Coredence-#{version}.dmg"
   name "Coredence"
@@ -18,7 +18,7 @@ cask "coredence" do
   depends_on macos: :sonoma
 
   app "Coredence.app"
-  #  on PATH: plugins start the server as , and
+  # `coredence` on PATH: plugins start the server as `coredence mcp`, and
   # ~/.local/bin (where the app writes its own launcher) is not on PATH on
   # every Mac. Homebrew's bin is. Available from 2.0.1; older bundles do not
   # carry the launcher.
