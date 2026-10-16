@@ -1,6 +1,6 @@
 cask "coredence" do
-  version "2.0.4"
-  sha256 "923dce020b9a90cd2d0b704d3bf7a3515d6d0a333f1cf3c9254874d4ea0ecc52"
+  version "2.0.5"
+  sha256 "7ff784c41a3c15cc2eaca3aee060e20fa4814aa7f36446ad5e96af2ac370659f"
 
   url "https://github.com/coredence/coredence/releases/download/v#{version}/Coredence-#{version}.dmg"
   name "Coredence"
